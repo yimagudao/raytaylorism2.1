@@ -92,3 +92,12 @@ wechat_subscriber:
 statement:
   enabled: true
   description: 声明：本文仅限用于学术交流，引用或转载本文时请注明出处！
+# 天气插件
+weather:
+  enabled: true
+  fid: GDUBBtCP5o
+# 公安备案
+gonganbeian: 
+  enabled: true
+  id: 50010602501787
+  all_tag: 渝公网安备 50010602501787号

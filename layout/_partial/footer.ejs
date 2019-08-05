@@ -33,9 +33,10 @@
             <%= current %> &nbsp;
             <%= theme.footer.copyright %>
             <p class="right" style="margin-top: 0;"><%= __('powered.first') %> <a href="https://hexo.io">Hexo</a><%= __('powered.last') %></p>
-                        <div style="width:300px;margin:-14px auto;">
-                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010602501787" style="text-decoration:none;height:20px;line-height:20px;"><img src="/images/beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 12px 0px 0px 5px; color:rgba(255,255,255,0.8);">渝公网安备 50010602501787号</p></a>
+             <% if (theme.gonganbeian.enabled) { %>
+            <div style="width:300px;margin:-14px auto;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=<%= theme.gonganbeian.id %>" style="text-decoration:none;height:20px;line-height:20px;"><img src="<%- config.root %>beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 12px 0px 0px 5px; color:rgba(255,255,255,0.8);"><%= theme.gonganbeian.all_tag %></p></a>
             </div>
-         
+          <% } %>
     </div>
 </footer>

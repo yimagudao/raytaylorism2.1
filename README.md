@@ -16,7 +16,7 @@ raytaylorism（Ray Taylor主义）是我自己设计并制作的一款清新的�
 
 ```
 cd yourblog
-git clone https://github.com/raytaylorlin/hexo-theme-raytaylorism.git themes/raytaylorism
+git clone https://github.com/yimagudao/raytaylorism.git
 ```
 
 请不定期`git pull`一下主题以便获得最新的功能。**请在pull之前先备份好你原来的配置。**

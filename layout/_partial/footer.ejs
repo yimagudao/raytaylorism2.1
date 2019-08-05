@@ -1,0 +1,41 @@
+<footer class="page-footer <%= theme.color.footer %> darken-1">
+    <% if (site.data.link) { %>
+    <div class="footer-container container">
+        <div class="row">
+            <% if (site.data.link.social) { %>
+            <div class="social-group col m4 s12">
+                <h5 class="white-text"><%= __('social') %></h5>
+                <% for (var type in site.data.link.social) { %>
+                    <a class="social-link" href="<%= site.data.link.social[type] %>" target="_blank">
+                        <i class="fa fa-2x fa-<%= type %>"></i>
+                    </a>
+                <% } %>
+                <%- partial('plugin/page_stat') %>
+            </div>
+            <% } %>
+
+            <% if (site.data.link && site.data.link.extern) { %>
+            <div class="col m8 s12">
+                <h5 class="white-text"><%= __('blogroll') %></h5>
+                <% for (var name in site.data.link.extern) { %>
+                    <a class="social-link" href="<%= site.data.link.extern[name] %>" target="_blank"><%= name %></a>
+                <% } %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <% } %>
+
+    <div class="footer-copyright <%= theme.color.link %>-link-context">
+        <div class="container">
+            <%  var current = date(Date.now(), "YYYY") %>
+            &copy; <% if (theme.footer.since && theme.footer.since != current) %><%= theme.footer.since %> &mdash; 
+            <%= current %> &nbsp;
+            <%= theme.footer.copyright %>
+            <p class="right" style="margin-top: 0;"><%= __('powered.first') %> <a href="https://hexo.io">Hexo</a><%= __('powered.last') %></p>
+                        <div style="width:300px;margin:-14px auto;">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010602501787" style="text-decoration:none;height:20px;line-height:20px;"><img src="/images/beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 12px 0px 0px 5px; color:rgba(255,255,255,0.8);">渝公网安备 50010602501787号</p></a>
+            </div>
+         
+    </div>
+</footer>

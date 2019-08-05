@@ -1,3 +1,15 @@
+# 声明
+本版本只是基于[hexo-theme-raytaylorism v2](https://github.com/raytaylorlin/hexo-theme-raytaylorism)做了一些个性化的改动，增加了部分插件
+* 增加公安备案信息
+* 增加点击文字特效
+* 增加天气插件
+* 增加微信订阅
+* 增加文章声明
+（可能还有一些其他修改，但自己已经记不起来了）
+可以参考以下链接：
++ [hexo更换主题raytaylorism](https://www.datablog.top/2018/05/13/hexo-blog-raytaylorism/)
++ [hexo:raytaylorism主题增加文字点击特效](https://www.datablog.top/2019/08/04/hexo-add-text/)
+
 # hexo-theme-raytaylorism v2
 
 raytaylorism（Ray Taylor主义）是我自己设计并制作的一款清新的的响应式Material Design风格的[Hexo]主题。该主题支持最新的Hexo 3.1版本。**本主题不再支持Hexo 2.x版本，请使用本主题前备份你的数据并升级到Hexo 3。**
